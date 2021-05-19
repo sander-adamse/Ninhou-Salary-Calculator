@@ -18,8 +18,7 @@ public class Uitrekenen {
             this.date1 = sDF.parse(beginTijd);
             this.date2 = sDF.parse(eindTijd);
             this.aantalKm = aantalKm;
-        } catch (Exception e) {
-        }
+        } catch (Exception e) {}
     }
 
     // Calculates MilliSeconds between two times
@@ -64,9 +63,7 @@ public class Uitrekenen {
             } else {
                 System.out.println("File: 2021.csv exists!");
             }
-        } catch (Exception e) {
-            System.out.println("An error has ocurred!");
-        }
+        } catch (Exception e) {}
     }
 
     // Writes File
@@ -79,8 +76,6 @@ public class Uitrekenen {
             BufferedWriter bW = new BufferedWriter(fW);
             bW.write(bedrag + ";" + java.time.LocalDate.now() + "\n");
             bW.close();
-        } catch (Exception e) {
-            System.out.println("An error has ocurred!");
-        }
+        } catch (Exception e) {}
     }
 }
